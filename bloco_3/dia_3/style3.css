@@ -1,0 +1,17 @@
+ *{
+     font-size: 25px;
+ }
+ .title{
+    text-align: center; 
+    background-color: antiquewhite;   
+}
+.list-ordenada li:hover {
+    background-color: rgb(216, 126, 171);
+   text-decoration: none;
+   list-style: none;
+}
+.text-list li {
+    font-style: italic;
+    list-style: none;
+    color: blue;
+}

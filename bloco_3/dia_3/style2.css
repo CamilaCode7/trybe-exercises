@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.super-mario{
+    width: 150px;    
+}
+.goomba{ 
+    width: 150px;
+}
+.bowser{
+    width: 150px;    
+}
+.baloon{
+    width: 200px;
+    z-index: 1;     
+}
+.word p{
+    text-size-adjust: 5px;
+    z-index: 2;
+    top: 10px;  
+    left: 100px;      
+}
