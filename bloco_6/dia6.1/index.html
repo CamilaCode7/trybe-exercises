@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header class="form-header">
+  <h1>Formulario de Cadastro de Curriculo</h1>
+  <p>Preencha os campos abaixo:</p>
+</header>
+<form id="cv-form" action="" method="get">
+  <div class="form-row">
+    <fieldset class="caixa1">
+      <div class="line-content">
+        <label for="name"> Nome:
+          <input type="text" id="name" placeholder="Digite seu nome" maxlength="40" required>
+        </label>
+      </div>
+      <div class="line-content">
+        <label for="email"> Digite seu e-mail:
+          <input type="email" autocomplete="off" autofocus id="email" placeholder="Digite seu e-mail" maxlength="50" required>
+        </label>
+      </div>
+      <div class="line-content">
+        <label for="cpf"> Digite seu CPF:
+          <input type="text" id="cpf" placeholder="Digite seu CPF, somente numeros" maxlength="11" required>
+        </label>
+      </div>
+      <div class="line-content">
+        <label for="endereco"> Digite seu Endereço:
+          <input type="text" id="endereco" placeholder="Digite seu Endereço" maxlength="200" required>
+        </label>
+      </div>
+      <div class="line-content">
+        <label for="cidade"> Digite sua Cidade
+          <input type="text" id="cidade" placeholder="Digite seu Endereço da sua cidade" maxlength="28" required>
+        </label>
+      </div>
+      <div class="line-content">
+        <label for="dropdown-estado"> Estado:
+          <select name="estado" id="dropdown-estado" required></select>
+        </label>
+      </div>
+      <div class="line-content">
+        <label for=""> Tipo de imovel:
+          <input type="radio" id="casa-text" name="casa" required checked>
+          <label for="casa-text"> Casa</label>
+          <input type="radio" id="apartamento" name="casa" required>
+          <label for="apartamento"> Apartamento</label>
+        </label>
+      </div>
+      </fieldset>
+      <fieldset class="caixa2">
+        <div class="line-content">
+          <label for="text-area">Dados do seu último emprego</label> <br>
+          <textarea name="textArea" id="text-area" cols="30" rows="10" required maxlength="100"></textarea>
+        </div>
+        <div class="line-content">
+          <label for="cargo-text">Cargo:</label>
+          <input type="text" id="cargo-text" maxlength="40" required placeholder="Dígite seu último gargo">
+        </div>
+        <div class="line-content">
+          <label for="describle-cargo"> Descrição Cargo</label>
+          <input type="text" name="cargo" id="describle-cargo" maxlength="500" required>
+        </div>
+        <div class="line-content">
+          <label for="date-text"> Data de inicio: </label>
+          <input type="date" name="date-text" required id="date-text" class="input-data">
+        </div>
+      </fieldset>
+      <div class="line-content">
+        <button type="submit" id="botao" class="button"> Enviar </button>
+        <button class="clear-button" type="button">Limpar</button>
+      </div>
+    </fieldset>
+  </div>
+</form>
+<section class="form-data"></section>
+<script src="script.js"></script>
+</body>
+</html>

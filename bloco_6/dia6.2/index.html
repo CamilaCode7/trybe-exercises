@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header class=" js-form form-header">
+  <h1>Formulário de Cadastro de Currículo</h1>
+  <p>Preencha os Campos Abaixo:</p>
+</header>
+<form class="js-form" id="cv-form" action="" method="get">
+  <div class="form-check">
+    <fieldset>
+      <div class="mb-3 ">
+         <label class="form-label" for="name"> Nome:</label>
+          <input class="form-control"type="text" id="name" placeholder="Digite seu nome" maxlength="40" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="email"> Digite seu e-mail:</label>
+          <input class="form-control"type="email" autocomplete="off" autofocus id="email" placeholder="Digite seu e-mail" maxlength="50" required>
+      </div>
+      <div class="mb-3"> 
+        <label class="form-label" for="cpf"> Digite seu CPF: </label>
+          <input class="form-control"type="text" id="cpf" placeholder="Digite seu CPF, somente numeros" maxlength = "11" required>
+        </div>
+      <div class="mb-3">
+        <label class="form-label" for="endereco"> Digite seu Endereço: </label>
+          <input class="form-control"type="text" id="endereco" placeholder="Digite seu Endereço" maxlength="200" required>
+        </div>
+      <div class="mb-3">
+        <label class="form-label"for="cidade"> Digite sua Cidade</label>
+          <input class="form-control"type="text" id="cidade" placeholder="Digite seu Endereço da sua cidade" maxlength="28" required>
+        </div>
+      <div class="mb-3">
+        <label class="form-label" for="dropdown-estado"> Estado:
+          <select class="form-select form-select-sm"name="estado" id="dropdown-estado" required></select>
+        </label>
+      </div>
+      <div class="mb-3">
+        <label class="form-label"for=""> Tipo de imovel: </label>
+        <div class="form-check">
+          <input class="form-check-input"type="radio" id="casa-text" name="casa" required checked>
+          <label class="form-check-label" for="casa-text"> Casa</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input"type="radio" id="apartamento" name="casa" required>
+          <label class="form-check-label"for="apartamento"> Apartamento</label>
+        </div>
+      </div>
+      </fieldset>
+      <fieldset>
+        <div class="mb-3">
+          <label class="form-label" for="text-area">Dados do seu último emprego</label> <br>
+          <textarea class="form-control"name="textArea"  id="text-area" cols="30" rows="10" required maxlength="100"></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label"for="cargo-text">Cargo:</label>
+          <input class="form-control" type="text" id="cargo-text" maxlength="40" required placeholder="Dígite seu último gargo">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="describle-cargo"> Descrição Cargo:</label>
+          <input class="form-control" placeholder="Descreva seu último cargo" type="text" name="cargo" id="describle-cargo" maxlength="500" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="date-text"> Data de inicio 
+          <input class="form-control" type="date" name="date-text" required id="date-text" class="input-data">
+        </label>
+        </div>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-success " type="submit" id="botao" class="button"> Enviar </button>
+        <button class="btn btn-danger " type="reset">Limpar</button>
+      </div>
+    </fieldset>
+  </div>
+</form>
+<section class="form-data"></section>
+<script src="script.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
