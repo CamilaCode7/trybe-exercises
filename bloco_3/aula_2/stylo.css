@@ -34,8 +34,10 @@
     font-style: oblique;
     text-decoration-style: none;
     margin-left: 400px;
+    border-style: red;
     }
   }
+
   <!-- Exercícios
 - Modifique o família do h1 para sans-serif
 - Deixe o parágrafo com o font-weight 600
