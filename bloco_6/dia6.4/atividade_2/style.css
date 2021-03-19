@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+  }
+
+    @media screen and (max-width: 600px) {
+      body {
+          background-color:rgb(104, 209, 223);
+      }
+      .container{
+          flex-wrap: wrap;
+          padding: 10px;
+          font-size: 20px;
+          color: white;
+      }
+      header{
+          font-size: 30px;
+          text-align: center;
+          
+      }
+      header li {
+        list-style-type: none;
+        background-color: rgb(58, 91, 99);
+        margin-right: 40px;
+      }
+      .aside-one  li{
+        font-size: 25px;
+      }
+      .main-content > p, .aside-two{
+          font-size: 30px;
+      }
+  }
+  
+    @media screen and (min-width: 600px) {
+    body {
+        background-color:rgb(138, 224, 152);
+    }
+    .container{
+          flex-wrap: wrap;
+          padding: 10px;
+          color: rgb(10, 10, 10);
+      }
+      header , h1, h2{
+          font-size: 30px;
+          text-align: center;
+          
+      }
+      header li {
+        list-style-type: none;
+        background-color: rgb(44, 121, 73);
+        margin-right: 40px;
+        border-style: dotted; 
+        border-color: rgb(253, 253, 253);
+        padding: 10px;
+        margin: 10px;
+      }
+      .aside-one h2, li{
+        font-size: 25px;
+        list-style: none;
+        text-align: center;
+        margin: 10px;
+        
+      }
+      .aside-two {
+          font-size: 30px;
+          text-align: right;
+      }
+      .main-content > p, .aside-two{
+          font-size: 30px;
+      }
+}
+    @media screen and (min-width: 1000px) {
+    body {
+        background-color:rgb(230, 170, 207);
+    }.container{
+        flex-wrap: wrap;
+        padding: 10px;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+    header{
+        font-size: 30px;
+        text-align: center;
+        
+    }
+    header li {
+      list-style-type: none;
+      border:none;
+      background-color:rgb(207, 148, 185);
+      flex-wrap: nowrap;
+    }
+    .aside-one  li{
+      font-size: 25px;
+      flex-wrap: nowrap;
+    }
+    .main-content > p, .aside-two{
+        font-size: 30px;
+    }
+}
